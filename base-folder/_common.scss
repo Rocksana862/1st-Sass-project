@@ -1,0 +1,246 @@
+@import "color";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 12000px;
+  margin: 0 auto;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: $black;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+.fix::before,
+.fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn,
+.btn-two {
+  display: inline-block;
+  background: #32b675;
+  overflow: hidden;
+  padding: 10px 30px;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+  &:hover {
+    transition: all linear 0.4s;
+  }
+}
+//****Common Scss Ends here*****//
+//****Common margin &padding start*****//
+@for $i from 1 through 5 {
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+}
+$list: left, center, right, justify;
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+//****Common margin &padding ends*****//
+//****Mixing part  start*****//
+
+@mixin span {
+  position: absolute;
+  content: "";
+  bottom: 1rem;
+  left: 40rem;
+  width: 12px;
+  height: 3rem;
+  border-radius: 10px;
+  background: $btn-bg;
+  cursor: pointer;
+}
+//****Mixing part ends*****//
+//****Another part scss start*****//
+@mixin right-btn {
+  display: inline-block;
+  background: #32b675;
+  overflow: hidden;
+  padding: 10px 30px;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+  &:hover {
+    background: $btn-learn-color;
+    color: $white;
+    transition: all linear 0.4s;
+  }
+}
+//****Another part scss ends*****//
+//****SRCV  part scss start*****//
+@mixin h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: map-has-key($weight, "medium");
+  font-size: 15px;
+  margin-bottom: 0;
+  line-height: 25px;
+  color: $prh-color;
+  text-align: center;
+  padding-top: 5rem;
+}
+@mixin h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: map-get($weight, "bold");
+  font-size: 30px;
+  color: $btn-color;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 45px;
+  padding-bottom: 3rem;
+}
+
+@mixin srvc-one {
+  background: none;
+  float: left;
+  width: 400px;
+  position: relative;
+  z-index: 10;
+}
+@mixin span-two {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 2rem;
+  left: 10rem;
+  background: $primary-color;
+  z-index: -1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  transition: all linear 0.4s;
+  &:hover {
+    background: $btn-bg;
+    cursor: pointer;
+    transition: all linear 0.4s;
+  }
+}
+@mixin i {
+  position: relative;
+  top: 3.75rem;
+  left: 0;
+  color: $white;
+  font-size: 30px;
+  z-index: 2;
+  transition: all linear 0.4s;
+  transform: translateX(11.55rem);
+  &:hover {
+    color: $black;
+    transition: all linear 0.4s;
+    cursor: pointer;
+  }
+}
+@mixin srvc-cnt {
+  background: none;
+  margin: 6rem 0 0 0;
+}
+@mixin h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: map-get($weight, "medium");
+  color: $srvc-cnt-color;
+  padding: 2rem 0 1.5rem 0;
+  &:hover {
+    color: $btn-bg;
+    cursor: pointer;
+    transition: all linear 0.4s;
+  }
+}
+@mixin p {
+  font-family: "Lato", sans-serif;
+  font-weight: map-get($weight, "regular");
+  font-size: 14px;
+  line-height: 24px;
+  color: $prh-color;
+  text-align: center;
+  padding: 0 0 3rem 0;
+}
+//****SRCV  part scss start*****//
+//****Purchase part scss start*****//
+$prch-color: #dddddd;
+
+//****Purchase part scss ends*****//
+//****PORTFOLIO part scss start*****//
+@mixin a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: map-get($weight, "regular");
+  color: $black;
+  margin-left: 10px;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all linear 0.4s;
+  &:hover {
+    background: $primary-color;
+    color: $white;
+    transition: all linear 0.4s;
+  }
+}
+//****PORTFOLIO part scss ends*****//
+//****FOOTER part scss start*****//
+@mixin footer-content {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: map-get($weight, "regular");
+  line-height: 24px;
+  color: $footer-color;
+  padding: 2rem 0;
+}
+
+@mixin footer-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: map-get($weight, "bold");
+  font-size: 18px;
+  color: $white;
+}
+@mixin glry-cnt {
+  font-family: "Roboto", sans-serif;
+  font-weight: map-get($weight, "regular");
+  line-height: 20px;
+  font-size: 15px;
+  display: block;
+  color: $footer-color;
+  margin-left: 1.5em;
+  transition: all linear 0.4s;
+  &:hover {
+    transition: all linear 0.4s;
+    color: $btn-learn-color;
+    cursor: pointer;
+  }
+}
+@mixin footer-span {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: $footer-color;
+  transition: all linear 0.4s;
+  &:hover {
+    color: $btn-learn-color;
+    transition: all linear 0.4s;
+  }
+}
+//****FOOTER part scss ends*****//

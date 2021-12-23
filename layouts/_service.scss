@@ -1,0 +1,144 @@
+.service {
+  background: #f9f9f9;
+  height: 860px;
+  margin-top: 7rem;
+  .srvc-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: none;
+
+    .srvc-title {
+      h5 {
+        @include h5();
+      }
+      h2 {
+        @include h2();
+      }
+    }
+    //** Srvc scss one start**//
+    .srvc-one {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss one ends**//
+    //** Srvc scss two start**//
+    .srvc-two {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+        transform: translateX(11.35rem);
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss two ends**//
+    //** Srvc scss three start**//
+    .srvc-three {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+        transform: translateX(11.65rem);
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss three ends**//
+    //** Srvc scss four start**//
+    .srvc-four {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+        transform: translateX(11.65rem);
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss four ends**//
+    //** Srvc scss five start**//
+    .srvc-five {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+        transform: translateX(11.65rem);
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss five ends**//
+    //** Srvc scss six start**//
+    .srvc-six {
+      @include srvc-one();
+      span {
+        @include span-two();
+      }
+      i {
+        @include i();
+        transform: translateX(11.35rem);
+      }
+      .srvc-cnt {
+        @include srvc-cnt();
+        h3 {
+          @include h3();
+        }
+        p {
+          @include p();
+        }
+      }
+    }
+    //** Srvc scss six ends**//
+  }
+}

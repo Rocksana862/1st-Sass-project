@@ -1,0 +1,121 @@
+.footer {
+  background: $btn-color;
+
+  .footer-wrapper {
+    background: none;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 6rem 0;
+    .footer-one {
+      width: 300px;
+      img {
+        width: 150px;
+        vertical-align: middle;
+      }
+      .footer-content {
+        @include footer-content();
+      }
+      a {
+        font-family: "Roboto", sans-serif;
+        font-weight: map-get($weight, "medium");
+        display: block;
+        color: $white;
+        transition: all linear 0.4s;
+        &:hover {
+          color: $primary-color;
+          transition: all linear 0.4s;
+        }
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+    .footer-two {
+      width: 300px;
+      .footer-title {
+        @include footer-title();
+      }
+      a {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: map-get($weight, "medium");
+        line-height: 24px;
+        color: $footer-color;
+        transition: all linear 0.4s;
+        &:hover {
+          color: $port-overly-color;
+          transition: all linear 0.4s;
+        }
+        i {
+          margin: 20px 20px 20px 0;
+        }
+      }
+    }
+    .footer-three {
+      width: 300px;
+      .footer-title {
+        @include footer-title();
+        margin-bottom: 1.75rem;
+      }
+      .footer-cnt-one {
+        margin-bottom: 1rem;
+        display: flex;
+        img {
+          width: 100%;
+          float: left;
+        }
+        .glry-cnt {
+          @include glry-cnt();
+        }
+        footer-span {
+          @include footer-span();
+        }
+      }
+    }
+    .footer-four {
+      width: 300px;
+      position: relative;
+      .footer-title {
+        @include footer-title();
+      }
+      .footer-content {
+        @include footer-content();
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+          background-color: transparent;
+          border: 1px solid #000;
+          margin: 1rem;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          transition: all linear 0.4s;
+          &:hover {
+            background: $btn-learn-color;
+            transition: all linear 0.4s;
+          }
+          a {
+            color: $footer-color;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    color: $prh-color;
+    padding: 0 0 2rem 0;
+  }
+}

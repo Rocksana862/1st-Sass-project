@@ -1,0 +1,46 @@
+.another-details {
+  background-image: url(../images/about-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .another-overlay {
+    background-color: $about-bg-overlay;
+    .another-wrapper {
+      width: 1200px;
+      background: none;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 0 0 3rem;
+      display: flex;
+      .left-cnt {
+        h5 {
+          font-family: "Roboto", sans-serif;
+          font-size: 25px;
+          font-weight: map-get($weight, "medium");
+          color: $white;
+          padding: 5rem 0 2rem 0;
+        }
+        p {
+          font-family: "Lato", sans-serif;
+          font-weight: map-get($weight, "regular");
+          color: $white;
+          box-sizing: border-box;
+          font-size: 14px;
+          line-height: 24px;
+          padding: 0 0 4rem 0;
+        }
+      }
+      .right-btn {
+        background: none;
+        a {
+          @include right-btn();
+          position: absolute;
+          top: 7rem;
+          right: 1rem;
+          background: #fbd258;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

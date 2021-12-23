@@ -1,0 +1,45 @@
+.prch {
+  background: #3c3c3c;
+  padding: 5rem 0;
+  .prch-wrapper {
+    background: none;
+    width: 1200px;
+    margin: 0 auto;
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-weight: map-get($weight, "medium");
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: $white;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: map-get($weight, "regular");
+      font-size: 14px;
+      color: $prch-color;
+      text-align: center;
+      line-height: 24px;
+    }
+    .prch-btn {
+      display: inline-block;
+      background: $btn-bg;
+      overflow: hidden;
+      padding: 10px 30px;
+      vertical-align: middle;
+      font-size: 1rem;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      border-radius: 25px;
+      transform: translateX(250%);
+      transition: all linear 0.4s;
+      margin: 2rem;
+      &:hover {
+        color: $white;
+        transition: all linear 0.4s;
+        background: $btn-learn-color;
+      }
+    }
+  }
+}

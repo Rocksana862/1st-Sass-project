@@ -1,0 +1,108 @@
+//****Google fonts link ends*****//
+.banner-area {
+  background-image: url(../images/slide-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  .banner_overlay {
+    width: 100%;
+    background: $bg-overlay;
+
+    .banner-main {
+      width: 1200px;
+      background: none;
+      margin: 0 auto;
+
+      h4 {
+        color: #ffff;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 38px;
+        font-weight: map-get($weight, "medium");
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 3px;
+        padding-top: 13rem;
+      }
+      h1 {
+        font-family: "Roboto", sans-serif;
+        color: #ffff;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-weight: map-get($weight, "bold");
+        text-align: center;
+        margin-bottom: 18px;
+        line-height: 52px;
+        transition: 0.3s;
+      }
+      p {
+        color: #fff;
+        font-family: "Lato", sans-serif;
+        font-weight: map-get($weight, "thin");
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: map-get($weight, "medium");
+        text-align: center;
+        padding-bottom: 19rem;
+      }
+
+      .btn-part {
+        position: relative;
+        .btn {
+          position: absolute;
+          top: -15rem;
+          left: 26rem;
+          color: $btn-color;
+          border-radius: 40px;
+          font-weight: map-get($weight, "bold");
+          &:hover {
+            background: $btn-bg;
+            color: $white;
+          }
+        }
+        .btn-two {
+          position: absolute;
+          top: -15rem;
+          right: 28rem;
+          color: $btn-color;
+          border-radius: 40px;
+          background: #fbd258;
+          font-weight: map-get($weight, "bold");
+          &:hover {
+            background: $btn-learn-color;
+            color: $white;
+          }
+        }
+      }
+      .dot-one {
+        @include span;
+      }
+      .dot-two {
+        position: absolute;
+        content: "NASA";
+        bottom: 3.5rem;
+        left: 41.5rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: $btn-bg;
+        cursor: pointer;
+      }
+
+      .dot-three {
+        position: absolute;
+        content: "NASA";
+        bottom: 3.5rem;
+        left: 43rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: $btn-bg;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.about {
+  background: #fff;
+  .main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    .title {
+      h1 {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-weight: map-get($weight, "medium");
+        color: $title-color;
+        font-size: 1.85rem;
+        line-height: 14.06px;
+        color: $btn-color;
+        text-align: center;
+        padding: 1rem 0;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        font-weight: map-get($weight, "medium");
+        text-align: center;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $btn-color;
+      }
+      h2 {
+        color: peru;
+      }
+    }
+    .about-details {
+      background: none;
+      padding: 2rem;
+      display: flex;
+      .single-one {
+        width: 400px;
+        background: #f9f9f9;
+        float: left;
+        position: relative;
+        margin-right: 1.55rem;
+        overflow: hidden;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+        &:hover .overlay {
+          transform: scale(1);
+          top: 0;
+          cursor: pointer;
+          transition-duration: 0.4s;
+        }
+        .overlay {
+          position: absolute;
+          top: -100%;
+          left: 0;
+          background: $btn-learn-color;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: scale(0);
+          transition-duration: 0.4s;
+          a i {
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            width: 40px;
+            height: 40px;
+            background: $btn-bg;
+            line-height: 40px;
+            text-align: center;
+            color: $white;
+            border-radius: 50%;
+            padding-left: 0.15rem;
+          }
+        }
+      }
+      h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 60%;
+        color: $white;
+      }
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: map-get($weight, "regular");
+        text-transform: uppercase;
+        color: $btn-color;
+        text-align: center;
+        padding: 2rem 0 0 0;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-weight: map-get($weight, "regular");
+        color: $prh-color;
+        font-size: 15px;
+        padding: 1rem 1rem 2rem 1rem;
+        text-align: center;
+      }
+    }
+  }
+}

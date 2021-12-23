@@ -1,0 +1,118 @@
+.portfolio {
+  background: #f9f9f9;
+  padding-bottom: 3rem;
+  .port-wrapper {
+    background: none;
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    .portfolio-title {
+      background: none;
+      h5 {
+        @include h5();
+      }
+      h2 {
+        @include h2();
+        padding-bottom: 2rem;
+      }
+    }
+    .portfolio-menu {
+      ul {
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 3rem;
+        li {
+          display: inline-block;
+          padding: 10px 10px;
+          a {
+            @include a();
+          }
+          .active {
+            background: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+    .port-category {
+      background: none;
+      display: flex;
+      .single-img-one {
+        width: 300px;
+        background: none;
+        margin: 0 2rem 2rem 0;
+        position: relative;
+        overflow: hidden;
+        &:hover .port-overlay {
+          transform: scale(1);
+          right: 0;
+          cursor: pointer;
+          transition: all linear 0.5s;
+        }
+        img {
+          width: 100%;
+        }
+        .port-overlay {
+          position: absolute;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100%;
+          background: $port-color;
+          transform: scale(0);
+          justify-content: center;
+          align-items: center;
+          transition: all linear 0 5s;
+          display: flex;
+          a i {
+            position: absolute;
+            top: 5.15rem;
+            right: 7rem;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px;
+            background: $white;
+            text-align: center;
+            color: $port-overly-color;
+          }
+          .overly-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            background: $white;
+            padding: 2.55rem;
+            h6 {
+              font-family: "Roboto", sans-serif;
+              font-size: 16px;
+              color: $btn-color;
+              font-weight: map-get($weight, "medium");
+              text-align: center;
+              position: absolute;
+              top: 0;
+              right: 7rem;
+              padding: 0.85rem 0;
+              transition: all linear 0.4s;
+              &:hover {
+                color: $btn-learn-color;
+                transition: all linear 0.4s;
+              }
+            }
+            p {
+              font-family: "Lato", sans-serif;
+              font-weight: map-get($weight, "regular");
+              font-size: 14px;
+              color: $prh-color;
+              line-height: 24px;
+              text-align: center;
+              position: absolute;
+              top: 2.35rem;
+              right: 8.15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
